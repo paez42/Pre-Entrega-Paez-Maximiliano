@@ -1,0 +1,22 @@
+{% extends "core/base.html" %}
+
+{% block title %}
+    <h1>PÁGINA DE INICIO</h1>
+{% endblock title %}
+
+{% block content %}
+    <ul>
+        <li>
+            <a href="{% url 'Clase:home' %}">Comisiones</a>
+            
+            <a href="{% url 'Clase:estudiante_home' %}">Estudiantes</a>
+
+            <a href="{% url 'Clase:profesor_home' %}">Profesores</a>
+
+            <a href="{% url 'Clase:curso_home' %}">Cursos</a>
+
+        </li>
+    </ul>
+{% endblock content %}
+
+
